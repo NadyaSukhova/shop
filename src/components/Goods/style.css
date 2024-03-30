@@ -3,6 +3,7 @@
     color: #838383;
     font-weight: 600;
     margin: 28px auto 5px;
+    width: 1110px;
 }
 
 .Goods-title:nth-last-of-type(2){
@@ -93,4 +94,38 @@ margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center
+}
+
+@media (max-width: 1157px) {
+    .Goods-title{
+        width: 700px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .Goods-title{
+        font-size: 25px;
+    }
+    .Goods-good-price, .Goods-good-title, .Goods-button button,.Goods-good-rate {
+        font-size: 22px;
+    }
+
+    .Goods-good-old-price {
+        font-size: 18px;
+    }
+
+    .Goods-good-rate svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Goods-headphones{
+        height: 430px;
+    }
+}
+
+@media (max-width: 777px) {
+    .Goods-title{
+        width: 350px;
+    }
 }

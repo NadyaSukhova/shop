@@ -12,7 +12,6 @@
 .Head-title {
     font-size: 25px;
     font-weight: 700;
-   
 }
 
 .Head-title a{
@@ -27,5 +26,37 @@
 }
 
 .Head-buttons-favorites {
-    margin-right: 25px;
+    margin-right: 45px;
+}
+
+
+@media (max-width: 1197px) {
+    .Head {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .Head{
+        height: 85px;
+    }
+    .Head-title{ 
+        font-size: 40px;
+    }
+    .Head-buttons svg{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 945px) {
+    .Head {
+        width: 750px;
+    }
+}
+
+@media (max-width: 769px) {
+    .Head {
+        width: 90%;
+    }
 }

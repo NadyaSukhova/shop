@@ -11,3 +11,13 @@
     margin-left: 15px;
     margin-top: -6px;
 }
+
+@media (max-width: 1025px) {
+    .Head-Icons {
+        width: 30px;
+        height: 30px;
+        font-size: 25px;
+        margin-left: 25px;
+        margin-top: -10px;
+    }
+}

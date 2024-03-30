@@ -6,19 +6,6 @@ import "./style.css";
 
 function Goods({ list, addToCart, dispatchAction, lang }) {
   const className = "Goods";
-
-  useEffect(() => {
-    var width =
-      document
-        .getElementsByClassName("Goods-headphones")[0]
-        .getBoundingClientRect().width *
-        3 +
-      60 +
-      "px";
-    document.getElementsByClassName("Goods-title")[0].style.width = width;
-    document.getElementsByClassName("Goods-title")[1].style.width = width;
-  });
-
   return (
     <div className={className}>
       <div className={cn(className, "title")}>{lang == 'rus' ? 'Наушники' : 'Headphones'}</div>
