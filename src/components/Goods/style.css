@@ -1,0 +1,96 @@
+.Goods-title {
+    font-size: 20px;
+    color: #838383;
+    font-weight: 600;
+    margin: 28px auto 5px;
+}
+
+.Goods-title:nth-last-of-type(2){
+    margin-top: 8px;
+}
+
+.Goods-headphones {
+    width: 350px;
+    height: 407px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 15px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+}
+
+.Goods-headphones:last-of-type {
+margin-bottom: 20px;
+}
+
+.Goods-headphones-pic {
+    width: 219.61px;
+    height: 237.07px;
+    margin: 15px auto 0;
+    display: block
+}
+
+.Goods-wired-headphones,
+.Goods-wireless-headphones {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.Goods-info {
+    padding: 54.36px 21px 32.6px;
+}
+
+.Goods-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.Goods-good-title,
+.Goods-good-price,
+.Goods-good-old-price,
+.Goods-button button,
+.Goods-good-rate {
+    font-weight: 600;
+}
+
+
+.Goods-good-title, .Goods-button button,.Goods-good-rate  {
+    font-size: 17px;
+}
+
+.Goods-good-price {
+    font-size: 17px;
+    color: #FFA542
+}
+
+.Goods-good-old-price {
+    text-decoration: line-through;
+    color: #FFCE7F;
+    font-size: 13px;
+    margin-bottom: 16px;
+    margin-top: -25px;
+}
+
+.Goods-good-rate {
+    display: flex;
+    align-items: center;
+    color: #838383;
+}
+
+.Goods-good-rate svg {
+    margin-right: 10px;
+}
+
+.Goods-button button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Goods-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}

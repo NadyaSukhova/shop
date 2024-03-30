@@ -1,0 +1,80 @@
+.Footer {
+    
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    width: 1110px;
+    height: 149px;
+    margin: 5px auto 0;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer-info {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.Footer-title {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 29px;
+}
+
+.Footer-title a{
+    color: #101010;
+    text-decoration: none;
+}
+
+.Footer-fields {
+    display: flex;
+    flex-direction: row;
+    width: 447px;
+    height: 82.8px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.Footer-field-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Footer-field-column:nth-child(2) {
+    justify-content: space-between;
+}
+
+.Footer-field-text {
+    font-size: 17px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.Footer-field-text a {
+text-decoration: none;
+color: black;
+}
+
+.Footer-field-languages {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.Footer-field-language{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #101010;
+}
+
+.Footer-cites{
+    padding: 29px 26.9px 0 0;
+}
+
+.Footer-cites svg{
+    margin-left: 17.9px;
+}

@@ -1,0 +1,13 @@
+.Head-Icons {
+    position: absolute;
+    background-color: #FFA542;
+    width: 17.4px;
+    height: 17.4px;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: -6px;
+}

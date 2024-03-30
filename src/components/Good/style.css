@@ -1,0 +1,97 @@
+.Good {
+    width: 633px;
+    height: 218px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin: 0 0 30px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    display: flex;
+    flex-direction: row;
+}
+
+.Good:last-of-type {
+    margin-bottom: 20px;
+}
+
+.Good-headphones-pic {
+    width: 146.53px;
+    height: 136px;
+    margin: 18px 0 19px 18.76px;
+    display: block
+}
+
+
+.Good-title {
+    font-size: 20px;
+    color: #1C1C27;
+    font-weight: 600;
+    margin: 29px 0 13px;
+}
+
+.Good-first-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.Good-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color:black;
+    font-size: 17px;
+    font-weight: 600;
+    width: 118.21px;
+}
+
+.Good-button {
+    color:white;
+    font-weight: 300;
+    font-size: 30px;
+    background-color: #FFCE7F;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Good-good-second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items:flex-start;
+    margin-left: 23.44px;
+}
+
+.Good-title {
+    font-weight: 500;
+    color:#1C1C27;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.Good-price {
+    font-size: 15px;
+    font-weight: 600;
+    color: #AAAAAA;
+}
+
+.Good-third-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 18px 28.13px 21px 0;
+}
+
+.Good-total-price{
+    font-size: 15px;
+    color: #1C1C27;
+    font-weight: 600;
+}

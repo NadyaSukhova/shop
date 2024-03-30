@@ -1,0 +1,19 @@
+.PageLayout {
+    background-color: #EAEAEA;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+}
+
+.PageLayout-body{
+    min-height: calc(100vh - 209px - 5px);
+    display: flex;
+    justify-content: center
+}
+
+.PageLayout-footer{
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-end;
+}
