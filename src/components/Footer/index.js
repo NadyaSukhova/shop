@@ -20,7 +20,7 @@ function Footer({ changeLang, dispatchAction, lang }) {
   });
   return (
     <div className={className}>
-      <div className={cn(className, "title")}> <Link to="/">QPICK</Link></div>
+      <div className={cn(className, "title")}> <Link to="/shop">QPICK</Link></div>
       <div className={cn(className, "info")}>
         <div className={cn(className, "fields")}>
           <div className={cn(className, "field-column")}>

@@ -1,11 +1,4 @@
 
-.Cart-Goods {
-    display: flex;
-    width: 1110px;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 .Cart-Goods-title {
     font-size: 20px;
     color: #1C1C27;

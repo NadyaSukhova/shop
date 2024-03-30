@@ -11,7 +11,7 @@ function Head({ title, amountFav, amountCart }) {
 
   return (
     <div className={className}>
-      <div className={cn(className, "title")}><Link to="/">{title}</Link></div>
+      <div className={cn(className, "title")}><Link to="/shop">{title}</Link></div>
       <div className={cn(className, "buttons")}>
         <div className={cn(cn(className, "buttons"), "favorites")}>
           <HeadIcons amount={amountFav}/>

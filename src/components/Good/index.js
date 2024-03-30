@@ -4,9 +4,17 @@ import cn from "../../utils/classnames.ts";
 import { RiDeleteBin2Line } from "react-icons/ri";
 import "./style.css";
 
-function Good({ item, dispatchAction, addToCart, deleteFromCart, deleteGoodCart }) {
+function Good({
+  cart,
+  dispatchAction,
+  addToCart,
+  deleteFromCart,
+  deleteGoodCart,
+}) {
   const className = "Good";
   return (
+    <div className={cn(className, "list")}>
+      {cart.goods.map((item) => (
         <div className={className}>
           <div className={cn(className, "first-column")}>
             <img
@@ -37,12 +45,22 @@ function Good({ item, dispatchAction, addToCart, deleteFromCart, deleteGoodCart 
             </div>
           </div>
           <div className={cn(className, "third-column")}>
-          <RiDeleteBin2Line color="#DF6464" size="19.93px" onClick={() => dispatchAction(deleteGoodCart(item.id, item.price * item.amount))}/>
-          <div className={cn(className, "total-price")}>
-            {(item.price * item.amount).toLocaleString("ru")} ₽
-          </div>
+            <RiDeleteBin2Line
+              color="#DF6464"
+              size="19.93px"
+              onClick={() =>
+                dispatchAction(
+                  deleteGoodCart(item.id, item.price * item.amount)
+                )
+              }
+            />
+            <div className={cn(className, "total-price")}>
+              {(item.price * item.amount).toLocaleString("ru")} ₽
+            </div>
           </div>
         </div>
+      ))}
+    </div>
   );
 }
 export default memo(Good);

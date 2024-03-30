@@ -17,19 +17,6 @@ function Cart() {
   const dispatchAction = useCallback((action) => dispatch(action), [dispatch]);
   const amountCart = useSelector((state) => state.cart.goods);
   const amountFav = useSelector((state) => state.favorite.goods).length;
-  const goodsList = (
-    <>
-      {cart.goods.map((item) => (
-        <Good
-          dispatchAction={dispatchAction}
-          addToCart={addToCart}
-          deleteFromCart={deleteFromCart}
-          deleteGoodCart={deleteGoodCart}
-          item={item}
-        />
-      ))}
-    </>
-  );
   return (
     <PageLayout
       head={
@@ -39,7 +26,16 @@ function Cart() {
           amountCart={cartAmount(amountCart)}
         />
       }
-      body={<CartGoods goodsList={goodsList} cart={cart} lang={lang} />}
+      body={
+        <CartGoods
+          cart={cart}
+          lang={lang}
+          dispatchAction={dispatchAction}
+          addToCart={addToCart}
+          deleteFromCart={deleteFromCart}
+          deleteGoodCart={deleteGoodCart}
+        />
+      }
       footer={
         <Footer
           changeLang={changeLang}

@@ -5,7 +5,14 @@ import { RiDeleteBin2Line } from "react-icons/ri";
 import Good from "../Good/index.js";
 import "./style.css";
 
-function CartGoods({ cart, lang, goodsList }) {
+function CartGoods({
+  cart,
+  lang,
+  dispatchAction,
+  addToCart,
+  deleteFromCart,
+  deleteGoodCart,
+}) {
   const className = "Cart-Goods";
   return (
     <div className={className}>
@@ -33,7 +40,13 @@ function CartGoods({ cart, lang, goodsList }) {
           ? "Корзина пустая :("
           : "Cart is empty :("}
       </div>
-      {goodsList}
+          <Good
+            dispatchAction={dispatchAction}
+            addToCart={addToCart}
+            deleteFromCart={deleteFromCart}
+            deleteGoodCart={deleteGoodCart}
+            cart={cart}
+          />
     </div>
   );
 }
