@@ -53,6 +53,11 @@
     font-weight: 400;
     width: max-content;
     padding: 10px 0 0;
+    text-decoration: transparent wavy underline; 
+}
+
+.Footer-field-text:not(#Footer-languages):hover {
+    text-decoration-color: #ffb744; 
 }
 
 .Footer-field-text a {
@@ -80,6 +85,13 @@
 
 .Footer-cites svg {
     margin-left: 17.9px;
+    cursor: pointer;
+    color: #101010;
+    transition: color 0.3s;
+}
+
+.Footer-cites svg:hover {
+    color:#ffb744;
 }
 
 @media (max-width: 1197px) {

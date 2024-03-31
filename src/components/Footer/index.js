@@ -44,18 +44,27 @@ function Footer() {
             {t("footer.favorites")}
           </div>
           <div className={cn(className, "field-text")}>
-            {" "}
             <Link to="/cart">{t("cart")}</Link>
           </div>
-          <div className={cn(className, "field-text")}>
+          <div
+            className={cn(className, "field-text")}
+            onClick={() => {
+              window.location = "https://www.neoflex.ru/contacts";
+            }}
+          >
             {t("footer.contacts")}
           </div>
         </div>
         <div className={cn(className, "field-column")}>
-          <div className={cn(className, "field-text")}>
+          <div
+            className={cn(className, "field-text")}
+            onClick={() => {
+              window.location = "https://docs.github.com/ru/site-policy/github-terms/github-terms-of-service";
+            }}
+          >
             {t("footer.service")}
           </div>
-          <div className={cn(className, "field-text")}>
+          <div className={cn(className, "field-text")}  id={cn(className, "languages")}>
             <div className={cn(className, "field-languages")}>
               <TfiWorld color="#838383" size="20px" />{" "}
               <div
@@ -73,11 +82,17 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <div className={cn(className, "cites")}>
-        <SlSocialVkontakte color="#101010" size="30.1px" />
-        <RiTelegramLine color="#101010" size="30.1px" />
-        <FaWhatsapp color="#101010" size="30.1px" />
+        <SlSocialVkontakte size="30.1px"  onClick={() => {
+              window.location = "https://vk.com/";
+            }}/>
+        <RiTelegramLine size="30.1px"  onClick={() => {
+              window.location = "https://web.tlgrm.app/";
+            }}/>
+        <FaWhatsapp size="30.1px"  onClick={() => {
+              window.location = "https://www.whatsapp.com/?lang=ru_RU";
+            }}/>
       </div>
     </div>
   );
