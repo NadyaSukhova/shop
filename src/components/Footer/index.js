@@ -49,7 +49,7 @@ function Footer() {
           <div
             className={cn(className, "field-text")}
             onClick={() => {
-              window.location = "https://www.neoflex.ru/contacts";
+              window.open("https://www.neoflex.ru/contacts");
             }}
           >
             {t("footer.contacts")}
@@ -59,7 +59,7 @@ function Footer() {
           <div
             className={cn(className, "field-text")}
             onClick={() => {
-              window.location = "https://docs.github.com/ru/site-policy/github-terms/github-terms-of-service";
+              window.open("https://docs.github.com/ru/site-policy/github-terms/github-terms-of-service");
             }}
           >
             {t("footer.service")}
@@ -85,13 +85,13 @@ function Footer() {
       </div>
       <div className={cn(className, "cites")}>
         <SlSocialVkontakte size="30.1px"  onClick={() => {
-              window.location = "https://vk.com/";
+              window.open("https://vk.com/");
             }}/>
         <RiTelegramLine size="30.1px"  onClick={() => {
-              window.location = "https://web.tlgrm.app/";
+              window.open("https://web.tlgrm.app/");
             }}/>
         <FaWhatsapp size="30.1px"  onClick={() => {
-              window.location = "https://www.whatsapp.com/?lang=ru_RU";
+              window.open("https://www.whatsapp.com/?lang=ru_RU");
             }}/>
       </div>
     </div>
