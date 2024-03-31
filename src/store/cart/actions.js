@@ -1,4 +1,6 @@
 export function addToCart(item) {
+  document.getElementById('but' + item.id).style.visibility="visible";
+  setTimeout(() => {document.getElementById('but' + item.id).style.visibility="hidden"}, 50)
     return {
       type: 'add-to-cart / sucess',
       price: item.price,

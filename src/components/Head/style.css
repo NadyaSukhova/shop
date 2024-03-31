@@ -25,8 +25,26 @@
     margin-right: 17px;
 }
 
-.Head-buttons-favorites {
+.Head-buttons-favorites svg{
     margin-right: 45px;
+    cursor: pointer;
+    color : #838383;
+    transition: color 0.3s;
+
+}
+
+.Head-buttons-favorites svg:hover{
+    color: white;
+}
+
+.Head-buttons-cart svg{
+    color : #838383;
+    transition: color 0.3s;
+
+}
+
+.Head-buttons-cart svg:hover{
+    color: white;
 }
 
 

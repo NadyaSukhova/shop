@@ -59,6 +59,10 @@
     cursor: pointer;
 }
 
+.Good-button:hover{
+    background-color: #f7ba59;
+}
+
 .Good-second-column {
     display: flex;
     flex-direction: column;
@@ -90,6 +94,16 @@
     align-items: flex-end;
     width: 100%;
     padding: 18px 28.13px 21px 0;
+}
+
+.Good-third-column svg {
+    cursor: pointer;
+}
+
+.Good-third-column svg:hover {
+    width: 24px;
+    height: 24px;
+    margin: calc((19.925px - 24px) / 2)
 }
 
 .Good-total-price {
@@ -141,6 +155,12 @@
     .Good-third-column svg{
         height: 30px;
         width: 30px;
+    }
+
+    .Good-third-column svg:hover {
+        width: 34px;
+        height: 34px;
+        margin: -2px
     }
 
     .Good-total-price{

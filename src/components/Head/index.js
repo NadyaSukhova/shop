@@ -15,12 +15,12 @@ function Head({ title, amountFav, amountCart }) {
       <div className={cn(className, "buttons")}>
         <div className={cn(cn(className, "buttons"), "favorites")}>
           <HeadIcons amount={amountFav}/>
-          <FaRegHeart color="#838383" size={"22px"} />
+          <FaRegHeart size={"22px"} />
         </div>{" "}
         <Link to="/cart">
           <div className={cn(cn(className, "buttons"), "cart")}>
             <HeadIcons amount={amountCart}/>
-            <RiShoppingCart2Line color="#838383" size={"22px"} />
+            <RiShoppingCart2Line size={"22px"} />
           </div>
         </Link>
       </div>

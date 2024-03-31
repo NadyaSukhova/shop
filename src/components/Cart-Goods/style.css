@@ -43,9 +43,13 @@
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 0px 0px 20px 0px #00000040;
+    transition: color 0.5s;
 
 }
 
+.Cart-Goods-panel-button:hover {
+    color:#FFCE7F;
+}
 
 @media (max-width: 1197px) {
     .Cart-Goods-panel{

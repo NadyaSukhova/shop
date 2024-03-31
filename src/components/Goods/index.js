@@ -3,6 +3,7 @@ import { getImageURL } from "../../utils/img.ts";
 import cn from "../../utils/classnames.ts";
 import { MdOutlineStar } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import but from "../../assets/but.png"
 import "./style.css";
 
 function Goods({ list, addToCart, dispatchAction }) {
@@ -43,6 +44,7 @@ function Goods({ list, addToCart, dispatchAction }) {
                     }}
                   >
                     {t("goods.buy")}
+                    <img className={cn(className,"buy-active")} id={'but' + item.id} alt='effect' src={but}/>
                   </button>
                 </div>
               </div>
