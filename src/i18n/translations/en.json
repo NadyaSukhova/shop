@@ -8,5 +8,11 @@
   "cart.total": "Total",
   "footer.contacts": "Contacts",
   "footer.service": "Terms of service",
-  "goods.buy": "Buy"
+  "goods.buy": "Buy",
+  "payment.name": "Name on card",
+  "payment.card": "Card number",
+  "payment.date": "Expiry date",
+  "payment.code": "Security code",
+  "payment.buy": "Pay",
+  "payment.cancel": "Cancel"
 }

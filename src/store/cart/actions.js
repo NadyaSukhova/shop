@@ -6,7 +6,7 @@ export function addToCart(item) {
     }, 50);
   }
   return {
-    type: "add-to-cart / sucess",
+    type: "add-to-cart / succes",
     price: item.price,
     id: item.id,
     title: item.title,
@@ -16,7 +16,7 @@ export function addToCart(item) {
 
 export function deleteFromCart(item) {
   return {
-    type: "delete-from-cart / sucess",
+    type: "delete-from-cart / succes",
     price: item.price,
     id: item.id,
     title: item.title,
@@ -26,7 +26,7 @@ export function deleteFromCart(item) {
 
 export function deleteGoodCart(id, price) {
   return {
-    type: "delete-good-cart / sucess",
+    type: "delete-good-cart / succes",
     id: id,
     price: price,
   };

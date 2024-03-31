@@ -6,7 +6,7 @@ export const initialState = {
 // Обработчик действий
 function reducer(state = initialState, action) {
   switch (action.type) {
-    case "add-to-favorites / sucess":
+    case "add-to-favorites / succes":
       return {
         goods:
         state.goods.length > 0 && state.goods.filter((item) => item.id == action.id).length != 0

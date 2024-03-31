@@ -27,7 +27,7 @@ function reducer(state = initialState, action) {
     return res;
   }
   switch (action.type) {
-    case "add-to-cart / sucess":
+    case "add-to-cart / succes":
       return {
         price: state.price + action.price,
         goods:
@@ -44,7 +44,7 @@ function reducer(state = initialState, action) {
                 },
               ],
       };
-      case 'delete-from-cart / sucess':
+      case 'delete-from-cart / succes':
         if (state.goods.filter((item) => item.id == action.id)[0].amount > 1)
       return{
         price: state.price - action.price,
@@ -54,7 +54,7 @@ function reducer(state = initialState, action) {
         price: state.price - action.price,
         goods: [...state.goods.filter((item) => item.id != action.id)]
       };
-      case 'delete-good-cart / sucess':
+      case 'delete-good-cart / succes':
         return {
           price: state.price - action.price,
           goods: [...state.goods.filter((item) => item.id != action.id)]

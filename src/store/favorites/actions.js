@@ -1,6 +1,6 @@
 export function addToFavorites(item) {
     return {
-      type: 'add-to-favorites / sucess',
+      type: 'add-to-favorites / succes',
       price: item.price,
       id: item.id,
       title: item.title,

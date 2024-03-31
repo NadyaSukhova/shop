@@ -8,5 +8,11 @@
   "footer.favorites": "Избранное",
   "footer.contacts": "Контакты",
   "footer.service": "Условия сервиса",
-  "goods.buy": "Купить"
+  "goods.buy": "Купить",
+  "payment.name": "Имя владельца",
+  "payment.card": "Номер карты",
+  "payment.date": "Срок действия",
+  "payment.code": "CVC код",
+  "payment.buy": "Оплатить",
+  "payment.cancel": "Отмена"
 }

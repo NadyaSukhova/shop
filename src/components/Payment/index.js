@@ -1,9 +1,11 @@
 import { memo, useEffect } from "react";
 import cn from "../../utils/classnames.ts";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
 function Payment({ cost, close }) {
   const className = "Payment";
+  const { t } = useTranslation();
 
   const formatNumber = (number) =>
     number.split("").reduce((seed, next, index) => {
@@ -18,6 +20,11 @@ function Payment({ cost, close }) {
     }, "");
 
   useEffect(() => {
+    const cardname = document.getElementById('name');
+    cardname.onkeydown = function (event) {
+        if( event.key.match(/[0-9]/) ) return event.preventDefault();
+      };
+
     const cardInput = document.getElementById("card-number");
     cardInput.addEventListener(
       "input",
@@ -51,7 +58,7 @@ function Payment({ cost, close }) {
     <div className={className}>
       <form className={cn(className, "form")}>
         <div>
-          <label for="name">Name on card</label>
+          <label for="name">{t("payment.name")}</label>
           <input
             required
             type="text"
@@ -61,7 +68,7 @@ function Payment({ cost, close }) {
           />
         </div>
         <div class="card-number">
-          <label>Card number</label>
+          <label>{t("payment.card")}</label>
           <input
             required
             type="text"
@@ -77,7 +84,7 @@ function Payment({ cost, close }) {
         </div>
         <div class="date-code">
           <div>
-            <label for="expiry-date">Expiry date</label>
+            <label for="expiry-date">{t("payment.date")}</label>
             <input
               required
               type="text"
@@ -92,7 +99,7 @@ function Payment({ cost, close }) {
             />
           </div>
           <div>
-            <label for="security-code">Security code</label>
+            <label for="security-code">{t("payment.code")}</label>
             <input
               required
               type="text"
@@ -116,10 +123,10 @@ function Payment({ cost, close }) {
               );
             }}
           >
-            Оплатить {cost} ₽
+            {t("payment.buy")} {cost} ₽
           </button>
           <button className={cn(className, "button")} onClick={close}>
-            Отмена
+          {t("payment.cancel")}
           </button>
         </div>
       </form>
