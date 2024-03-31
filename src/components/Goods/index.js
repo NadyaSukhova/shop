@@ -86,8 +86,8 @@ function Goods({ list, addToCart, dispatchAction }) {
                       dispatchAction(addToCart(item));
                     }}
                   >
-                    {" "}
                     {t("goods.buy")}
+                    <img className={cn(className,"buy-active")} id={'but' + item.id} alt='effect' src={but}/>
                   </button>
                 </div>
               </div>
