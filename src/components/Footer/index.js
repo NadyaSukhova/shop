@@ -1,23 +1,37 @@
-import { memo } from "react";
-import { useEffect } from "react";
+import { memo, useEffect } from "react";
 import cn from "../../utils/classnames.ts";
 import { TfiWorld } from "react-icons/tfi";
 import { SlSocialVkontakte } from "react-icons/sl";
 import { RiTelegramLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
-function Footer({ changeLang, dispatchAction, lang }) {
+function Footer() {
+  const { t, i18n } = useTranslation();
+
   const className = "Footer";
 
   useEffect(() => {
-    if (
-      document.getElementsByClassName("Footer-field-language")[0].style.color ==
-      document.getElementsByClassName("Footer-field-language")[1].style.color
-    )
-      dispatchAction(changeLang(lang));
+    var orange = 0;
+    if (i18n.language == "rus") orange = 0;
+    else orange = 1;
+    var simple = 1 - orange;
+    document.getElementsByClassName("Footer-field-language")[
+      orange
+    ].style.fontWeight = "700";
+    document.getElementsByClassName("Footer-field-language")[
+      orange
+    ].style.color = "#FFA542";
+    document.getElementsByClassName("Footer-field-language")[
+      simple
+    ].style.fontWeight = "500";
+    document.getElementsByClassName("Footer-field-language")[
+      simple
+    ].style.color = "#101010";
   });
+
   return (
     <div className={className}>
       <div className={cn(className, "title")}>
@@ -27,32 +41,32 @@ function Footer({ changeLang, dispatchAction, lang }) {
       <div className={cn(className, "fields")}>
         <div className={cn(className, "field-column")}>
           <div className={cn(className, "field-text")}>
-            {lang == "rus" ? "Избранное" : "Favorites"}
+            {t("footer.favorites")}
           </div>
           <div className={cn(className, "field-text")}>
             {" "}
-            <Link to="/cart">{lang == "rus" ? "Корзина" : "Cart"}</Link>
+            <Link to="/cart">{t("cart")}</Link>
           </div>
           <div className={cn(className, "field-text")}>
-            {lang == "rus" ? "Контакты" : "Contacts"}
+            {t("footer.contacts")}
           </div>
         </div>
         <div className={cn(className, "field-column")}>
           <div className={cn(className, "field-text")}>
-            {lang == "rus" ? "Условия сервиса" : "Terms of service"}
+            {t("footer.service")}
           </div>
           <div className={cn(className, "field-text")}>
             <div className={cn(className, "field-languages")}>
               <TfiWorld color="#838383" size="20px" />{" "}
               <div
                 className={cn(className, "field-language")}
-                onClick={() => dispatchAction(changeLang("rus"))}
+                onClick={() => i18n.changeLanguage("rus")}
               >
                 Рус
-              </div>{" "}
+              </div>
               <div
                 className={cn(className, "field-language")}
-                onClick={() => dispatchAction(changeLang("eng"))}
+                onClick={() => i18n.changeLanguage("en")}
               >
                 Eng
               </div>

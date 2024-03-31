@@ -2,13 +2,16 @@ import { memo, useEffect } from "react";
 import { getImageURL } from "../../utils/img.ts";
 import cn from "../../utils/classnames.ts";
 import { MdOutlineStar } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 import "./style.css";
 
-function Goods({ list, addToCart, dispatchAction, lang }) {
+function Goods({ list, addToCart, dispatchAction }) {
+  const { t } = useTranslation();
+
   const className = "Goods";
   return (
     <div className={className}>
-      <div className={cn(className, "title")}>{lang == 'rus' ? 'Наушники' : 'Headphones'}</div>
+      <div className={cn(className, "title")}> {t("title.headphones")}</div>
       <div className={cn(className, "wired-headphones")}>
         {list[0].headphones.map((item) => (
           <div className={cn(className, "headphones")}>
@@ -39,7 +42,7 @@ function Goods({ list, addToCart, dispatchAction, lang }) {
                       dispatchAction(addToCart(item));
                     }}
                   >
-                    {lang == 'rus' ? 'Купить' : 'Buy'}
+                    {t("goods.buy")}
                   </button>
                 </div>
               </div>
@@ -47,7 +50,9 @@ function Goods({ list, addToCart, dispatchAction, lang }) {
           </div>
         ))}
       </div>
-      <div className={cn(className, "title")}>{lang == 'rus' ? 'Беспроводные наушники' : 'Wireless headphones'}</div>
+      <div className={cn(className, "title")}>
+        {t("title.wirelesHeadphones")}
+      </div>
 
       <div className={cn(className, "wireless-headphones")}>
         {list[0].wirelessHeadphones.map((item) => (
@@ -79,7 +84,8 @@ function Goods({ list, addToCart, dispatchAction, lang }) {
                       dispatchAction(addToCart(item));
                     }}
                   >
-                    {lang == 'rus' ? 'Купить' : 'Buy'}
+                    {" "}
+                    {t("goods.buy")}
                   </button>
                 </div>
               </div>

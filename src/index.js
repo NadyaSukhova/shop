@@ -6,6 +6,7 @@ import App from "./app";
 import Cart from "./app/cart";
 import { createStore } from "redux";
 import { store } from "./store/index";
+import "./i18n";
 
 const router = createBrowserRouter([
   {
