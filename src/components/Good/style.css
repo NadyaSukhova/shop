@@ -188,6 +188,13 @@
     .Good-third-column svg{
         margin: 20px
     }
+
+    .Good-third-column svg:hover {
+        width: 34px;
+        height: 34px;
+        margin: 18px
+    }
+    
     .Good-total-price {
         margin: 20px;
     }
