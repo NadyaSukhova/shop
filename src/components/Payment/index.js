@@ -96,8 +96,22 @@ function Payment({ cost, close }) {
             />
           </div>
         </div>
-        <button>Оплатить {cost} ₽</button>
-        <button onClick={close}>Отмена</button>
+        <div className={cn(className, "buttons")}>
+          <button
+            className={cn(className, "button")}
+            onClick={() => {
+              close();
+              window.open(
+                "https://www.sberbank.com/ru/person/remittance/beznal_cc_rus"
+              );
+            }}
+          >
+            Оплатить {cost} ₽
+          </button>
+          <button className={cn(className, "button")} onClick={close}>
+            Отмена
+          </button>
+        </div>
       </form>
     </div>
   );

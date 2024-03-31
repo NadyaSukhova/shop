@@ -43,8 +43,9 @@ function CartGoods({
           </div>
           <div
             className={cn(className, "panel-button")}
-            onClick={() => {
-              setShowPayment(true)
+            onClick={() => { if (cart.price > 0)
+              setShowPayment(true);
+              else alert('В корзине пусто!');
             }}
           >
             {t("cart.confirm")}
