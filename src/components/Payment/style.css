@@ -1,0 +1,26 @@
+.Payment {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: -60px;
+}
+
+.Payment-form {
+    margin-top: 60px;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 50px 50px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Payment-form label{
+   display: block;
+}
