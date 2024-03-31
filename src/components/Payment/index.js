@@ -24,11 +24,21 @@ function Payment({ cost, close }) {
       () =>
         (cardInput.value = formatNumber(cardInput.value.replaceAll(" ", "")))
     );
+    cardInput.onkeydown = function (event) {
+        if (isNaN(event.key) && event.key !== "Backspace") {
+          event.preventDefault();
+        }
+      };
     const dateInput = document.getElementById("expiry-date");
     dateInput.addEventListener(
       "input",
       () => (dateInput.value = formatDate(dateInput.value.replaceAll("/", "")))
     );
+    dateInput.onkeydown = function (event) {
+        if (isNaN(event.key) && event.key !== "Backspace") {
+          event.preventDefault();
+        }
+      };
     const codeInput = document.getElementById("security-code");
     codeInput.onkeydown = function (event) {
       if (isNaN(event.key) && event.key !== "Backspace") {
