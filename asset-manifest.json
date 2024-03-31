@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shop/static/css/main.794703f3.css",
-    "main.js": "/shop/static/js/main.5e802e29.js",
+    "main.js": "/shop/static/js/main.18cf213b.js",
     "static/media/headphones_3.png": "/shop/static/media/headphones_3.05d27dbe31695199b2a4.png",
     "static/media/headphones_6.png": "/shop/static/media/headphones_6.1a4c57fdcfa0aa1b2601.png",
     "static/media/headphones_5.png": "/shop/static/media/headphones_5.6efeac82324568e6f968.png",
@@ -10,10 +10,10 @@
     "static/media/headphones_2.png": "/shop/static/media/headphones_2.2ca1d84e77b411689d31.png",
     "index.html": "/shop/index.html",
     "main.794703f3.css.map": "/shop/static/css/main.794703f3.css.map",
-    "main.5e802e29.js.map": "/shop/static/js/main.5e802e29.js.map"
+    "main.18cf213b.js.map": "/shop/static/js/main.18cf213b.js.map"
   },
   "entrypoints": [
     "static/css/main.794703f3.css",
-    "static/js/main.5e802e29.js"
+    "static/js/main.18cf213b.js"
   ]
 }
